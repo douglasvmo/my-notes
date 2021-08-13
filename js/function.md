@@ -21,11 +21,11 @@ function middleware(value, next){
     next(value)
 }
 ```
-executando a composição, e passando para a função composta o *significado da vida, do universo e tudo mais* como parametro
+executando a composição, e passando para a função composta o "significado da vida, do universo e tudo mais" como parametro
 
 ```js
-const myComposedFunction = compose(middleware, middleware, ...);
+const myComposedFunction = compose(middleware, middleware, otherMiddleware);
 
-const init = 42;
-myComposedFunction(init)
+const lifeUniverseAndEverything = 42;
+myComposedFunction(lifeUniverseAndEverything)
 ```
